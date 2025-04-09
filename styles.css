@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+
+  header {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #00c6ff;
+  }
+
+  nav a {
+    margin-left: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.3s;
+    position: relative;
+  }
+
+  nav a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #00c6ff;
+    width: 0;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+
+  nav a:hover::after {
+    width: 100%;
+  }
+
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    background: #1a1a1a;
+    position: relative;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+    max-width: 700px;
+  }
+
+  .hero img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid #00c6ff;
+    box-shadow: 0 0 15px rgba(0, 198, 255, 0.5);
+  }
+
+  .btn {
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    background: #00c6ff;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 198, 255, 0.4);
+  }
+
+  .btn:hover {
+    background: #00aaff;
+    transform: scale(1.05);
+  }
+
+  section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  #about {
+    background: #1c1c1c;
+  }
+
+  #about h2, #projects h2, #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #00c6ff;
+  }
+
+  #about img {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 198, 255, 0.2);
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .project {
+    background: #252525;
+    padding: 1.5rem;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  }
+
+  .project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 198, 255, 0.3);
+  }
+
+  .project h3 {
+    margin-bottom: 0.5rem;
+    color: #00c6ff;
+  }
+
+  .project p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 2.5rem;
+  }
+
+  #contact {
+    background: #111;
+  }
+
+  footer {
+    background: #0a0a0a;
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+
+  .socials {
+    margin-top: 1rem;
+  }
+
+  .socials a {
+    color: #00c6ff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+
+  .socials a:hover {
+    color: #00aaff;
+  }
+
+  #skills {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .skill-card {
+    background: #252525;
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,198,255,0.3);
+  }
+  
+  .skill-card i {
+    font-size: 2.5rem;
+    color: #00c6ff;
+    margin-bottom: 1rem;
+  }
+  
+  .bar {
+    background: #444;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 1rem;
+    height: 20px;
+  }
+  
+  .fill {
+    background: #00c6ff;
+    height: 100%;
+    text-align: right;
+    padding-right: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 20px;
+    color: #000;
+  }
