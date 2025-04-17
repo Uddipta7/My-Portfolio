@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Uddipta Singha</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <img src="https://avatars.githubusercontent.com/u/9919?s=280&v=4" alt="Profile Picture">
+      <h1>Hey, I'm Uddipta Singha</h1>
+      <p>A passionate Full-Stack Developer creating beautiful and functional web experiences with cutting-edge technologies.</p>
+      <button class="btn" onclick="scrollToSection('projects')">View My Work</button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate Full-Stack Developer with strong expertise in both frontend and backend development, building responsive, high-performance web applications. With a solid foundation in data structures and algorithms, I craft scalable and optimized solutions. I enjoy working with modern tools like React, Node.js, Python, and machine learning libraries such as NumPy and Streamlit. Always eager to innovate, I thrive on turning complex challenges into elegant, impactful software.</p>
+    <img src="https://img.freepik.com/premium-vector/web-development-concept-with-plexus-background-seo-website-app-design-digital-network-design_618588-1215.jpg?w=360" alt="Developer Illustration">
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <i class="fab fa-html5"></i>
+        <h3>HTML/CSS</h3>
+        <div class="bar"><div class="fill" style="width: 90%;" data-percent="90%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-js-square"></i>
+        <h3>JavaScript</h3>
+        <div class="bar"><div class="fill" style="width: 85%;" data-percent="85%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-react"></i>
+        <h3>React</h3>
+        <div class="bar"><div class="fill" style="width: 90%;" data-percent="90%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-node-js"></i>
+        <h3>Node.js</h3>
+        <div class="bar"><div class="fill" style="width: 80%;" data-percent="80%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-code"></i>
+        <h3>C/C++</h3>
+        <div class="bar"><div class="fill" style="width: 80%;" data-percent="80%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-java"></i>
+        <h3>Java</h3>
+        <div class="bar"><div class="fill" style="width: 70%;" data-percent="70%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-python"></i>
+        <h3>Python</h3>
+        <div class="bar"><div class="fill" style="width: 75%;" data-percent="75%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-wind"></i>
+        <h3>Tailwind CSS</h3>
+        <div class="bar"><div class="fill" style="width: 75%;" data-percent="75%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-bootstrap"></i>
+        <h3>Bootstrap</h3>
+        <div class="bar"><div class="fill" style="width: 85%;" data-percent="85%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-database"></i>
+        <h3>Pandas</h3>
+        <div class="bar"><div class="fill" style="width: 75%;" data-percent="75%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Matplotlib</h3>
+        <div class="bar"><div class="fill" style="width: 85%;" data-percent="85%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-stream"></i>
+        <h3>Streamlit</h3>
+        <div class="bar"><div class="fill" style="width: 70%;" data-percent="70%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-brain"></i>
+        <h3>PyTorch</h3>
+        <div class="bar"><div class="fill" style="width: 80%;" data-percent="80%"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-git-alt"></i>
+        <h3>Git</h3>
+        <div class="bar"><div class="fill" style="width: 80%;" data-percent="80%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>NutriNova</h3>
+        <p>Your AI-powered nutrition coach! Track meals, analyze macros, log workouts, and get personalized health insights—all in one sleek Streamlit app powered by Gemini AI and Nutritionix APIs. 🌱📊</p>
+        <a href="https://github.com/Uddipta7/NutriNova" class="btn" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>ClimateLens</h3>
+        <p>A living dashboard that transforms climate chaos into clear insights - tracking Earth's vital signs from temperature spikes to vanishing forests with AI-powered precision.🌱</p>
+        <a href="https://github.com/Uddipta7/ClimateTracker" class="btn" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>CineMatch</h3>
+        <p>Your personal film curator! that analyzes your taste to suggest perfect movies—because your perfect watchlist is just an algorithm away. 🍿🤖</p>
+        <a href="https://github.com/Uddipta7/Movie-Recommender-System" class="btn" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Let's connect and build something amazing together!</p>
+    <p>Email: <a href="mailto:uddipta278@gmail.com">uddipta278@gmail.com</a></p>
+    <p>Phone: <a href="tel:+916290697346">+91-6290697346</a></p>
+    <div class="socials">
+      <a href="https://github.com/Uddipta7" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/uddipta-singha" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/@uddipta39" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://leetcode.com/Uddipta_Singha_04" target="_blank"><i class="fas fa-code"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Uddipta Singha. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
